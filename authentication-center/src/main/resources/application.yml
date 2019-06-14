@@ -1,0 +1,8 @@
+server:
+  port: 8501
+
+logging.level.org.springframework.security: DEBUG
+spring.security.oauth2.client.registration.google.client-id: 501299388125-gflctcff71a4if7p2s9296cjrr00o2lc.apps.googleusercontent.com
+spring.security.oauth2.client.registration.google.client-secret: WCAGVsqO78laQnnf79-jFwxc
+spring.security.oauth2.client.registration.facebook.client-id: 1655467497942082
+spring.security.oauth2.client.registration.facebook.client-secret: bd07e1d1bd1aac1c837f5c0124c73ed7
