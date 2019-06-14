@@ -1,0 +1,19 @@
+#zuul:
+#  routes:
+#    auth-center:
+#      path: /login/**
+#      url: http://127.0.0.1:8081/
+#      sensitiveHeaders: Cookie,Set-Cookie
+#      stripPrefix: false
+#    backend-service:
+#      path: /backend/**
+#      url: http://127.0.0.1:8082/
+#
+#raj:
+#  security:
+#    jwt:
+#      secret: asupersecretpassword
+
+#spring.rabbitmq.host=rabbitmq
+#spring.rabbitmq.port=5672
+#currency-exchange-service.ribbon.listOfServers=http://localhost:8000,http://localhost:8001

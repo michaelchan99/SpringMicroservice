@@ -1,0 +1,31 @@
+spring.application.name: netflix-zuul-api-gateway-server
+zuul:
+  ribbon:
+    eager-load:
+      enabled: true
+#logging.level.org.springframework.web: DEBUG
+logging.level.org.springframework.security.web.FilterChainProxy: DEBUG
+
+
+#  org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5fa9b380,
+#  org.springframework.security.web.context.SecurityContextPersistenceFilter@3e3c8059,
+#  org.springframework.security.web.header.HeaderWriterFilter@5d58975c,
+#  org.springframework.security.web.authentication.logout.LogoutFilter@6451a889,
+#  org.springframework.security.oauth2.provider.authentication.ResourceServerConfigurerAdapter@65e13d12,
+#  org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4d638fb8,
+#  org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@96a9be7,
+#  org.springframework.security.web.session.SessionManagementFilter@53ce54d9,
+#  org.springframework.security.web.access.ExceptionTranslationFilter@705842d2,
+#  org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7b59b53c
+#
+#
+#  org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5f9ddff8,
+#  org.springframework.security.web.context.SecurityContextPersistenceFilter@2629e80c,
+#  org.springframework.security.web.header.HeaderWriterFilter@27a71f68,
+#  org.springframework.security.web.authentication.logout.LogoutFilter@6753e4fa,
+#  com.lt.microservices.security.CustomSecurityFilter@381c1d3a,
+#  org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1d670f45,
+#  org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2240fde,
+#  org.springframework.security.web.session.SessionManagementFilter@149e3199,
+#  org.springframework.security.web.access.ExceptionTranslationFilter@3141568a,
+#  org.springframework.security.web.access.intercept.FilterSecurityInterceptor@f07ffe1

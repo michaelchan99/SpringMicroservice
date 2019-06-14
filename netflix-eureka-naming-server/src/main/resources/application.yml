@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: netflix-eureka-naming-server
+server:
+  port: 8761
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    should-enforce-registration-at-init: false
+    fetch-remote-regions-registry: false
+  server:
+    renewal-percent-threshold: 0.49
+    enableSelfPreservation: false
+  instance:
+    lease-renewal-interval-in-seconds: 10
+    preferIpAddress: false  #registration prefer hostname instead of IP

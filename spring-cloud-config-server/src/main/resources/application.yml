@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: spring-cloud-config-server
+  cloud:
+    config:
+      server:
+        jdbc:
+          sql: SELECT `KEY`, `VALUE` from properties where APPLICATION=? and PROFILE=? and LABEL=?
+  profiles:
+    active: jdbc
+  datasource:
+    url: jdbc:mysql://${DB_HOST}/config
+    username: ${DB_USER}
+    password: ${DB_PASSWORD}
+    driver-class-name: com.mysql.jdbc.Driver
+
+server:
+  port: 8888
+
+#spring.cloud.config.server.git.uri=file:///Users/Michael/Documents/git-localconf-repo

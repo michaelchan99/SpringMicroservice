@@ -1,0 +1,4 @@
+spring.application.name: spring-admin-server
+spring.cloud.config:
+  fail-fast: true
+  uri: http://spring-cloud-config-server:8888
